@@ -1,0 +1,53 @@
+<html>
+<head>
+	   <style>
+    body{
+      background-image:url(jk.jpg);
+      background-size:cover;
+      background-attachment: fixed;
+    }
+    p{
+      color:black
+    }
+    h4{
+      color:black
+    }
+  </style>
+</head>
+<body>
+<p><font face='Algerian ' size='20' color='blue'>Menghitung Luas Segitiga Menggunakan Javascript</font></p>
+<form name='hls3' method='post'>
+<table>
+<tr>
+<td>Alas Segitiga</td>
+<td>:</td>
+<td><input type='number' name='as3' value='0' onchange='hitungluas();'></td>
+</tr>
+<tr>
+<td>Tinggi Segitiga</td>
+<td>:</td>
+<td><input type='number' name='ts3' value='0' onchange='hitungluas();'></td>
+</tr>
+<tr>
+<td>Luas Segitiga</td>
+<td>:</td>
+<td> <input type='text' name='ls3' onchange='hitungluas();'></td>
+</tr>
+</table>
+</form>
+</body>
+<script type='text/javascript'>
+function hitungluas(){
+var alas = document.forms['hls3']['as3'].value;
+alas = parseInt(alas);
+
+ 
+var tinggi = document.forms['hls3']['ts3'].value;
+tinggi = parseInt(tinggi);
+var luas = (alas*tinggi)/2;
+document.forms['hls3']['ls3'].value = luas;
+}
+
+</script>
+
+</html>
